@@ -5,7 +5,8 @@ public class Variables {
 		//Variables.convertCentimetersToInches();
 		//Variables.mathSqrt();
 		
-		mathRound();
+		//mathRound();
+		mathPow();
 	}
 	
 	private static void getAmount() {
@@ -40,5 +41,14 @@ public class Variables {
 		final double PI = Math.PI;
 		int roundPI = (int)Math.round(PI);
 		System.out.println("The number PI rounded is: " + roundPI);
+	}
+	
+	private static void mathPow() {
+		int base = 7;
+		int exponent = 3;
+		
+		int result = (int)Math.pow(base, exponent);
+		
+		System.out.println("The power of " + base + " raised to the exponent " + exponent + " is " + result);
 	}
 }
