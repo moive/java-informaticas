@@ -6,7 +6,8 @@ public class Variables {
 		//Variables.mathSqrt();
 		
 		//mathRound();
-		mathPow();
+		//mathPow();
+		manipulationString();
 	}
 	
 	private static void getAmount() {
@@ -50,5 +51,24 @@ public class Variables {
 		int result = (int)Math.pow(base, exponent);
 		
 		System.out.println("The power of " + base + " raised to the exponent " + exponent + " is " + result);
+	}
+	
+	static void manipulationString() {
+		String name = "Moises";
+		
+		String name_lowercase = "moises";
+		
+		String phrase = "Today is a great day to learn to program in Java";
+		
+		System.out.println("My name is " + name);
+		System.out.println("My name have " + name.length() + " letters");
+		System.out.println("First letter of " + name + " is '" + name.charAt(0) + "'");
+		int lastLetterName = name.length();
+		System.out.println("Last letter of " + name + " is '" + name.charAt(lastLetterName-1) + "'");
+		
+		System.out.println(phrase.subSequence(24, phrase.length()));
+		
+		System.out.println(name.equals(name_lowercase));
+		System.out.println(name.equalsIgnoreCase(name_lowercase));
 	}
 }
